@@ -10,10 +10,10 @@ import org.jetbrains.exposed.sql.transactions.transaction
 object DatabaseFactory {
 
     fun init() {
-        val user = "avnadmin"
-        val password = "AVNS_r9x866LM541U4Cit5EZ"
-        val driverClassName = "org.h2.Driver"
-        val jdbcURL = "jdbc:postgresql://pg-petlink-petlink.aivencloud.com:19023/defaultdb?ssl=require&user=avnadmin&password=AVNS_r9x866LM541U4Cit5EZ"
+        val user = ""
+        val password = ""
+        val driverClassName = ""
+        val jdbcURL = ""
         val database = Database.connect(jdbcURL, driverClassName, user, password)
         transaction(database) {
             SchemaUtils.create(Users)
